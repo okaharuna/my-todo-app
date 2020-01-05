@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { TodoComponent } from './component/todo/todo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { TodoComponent } from './component/todo/todo.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DragDropModule
+    DragDropModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
