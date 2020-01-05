@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-trello-mock'`, () => {
+  it(`should have as title 'my-todo-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angular-trello-mock');
+    expect(app.title).toEqual('my-todo-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-trello-mock app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('my-todo-app app is running!');
   });
 });
